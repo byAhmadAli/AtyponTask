@@ -1,0 +1,11 @@
+@import "functions";
+
+// Grid Columns
+$row-width: rem-calc(1000);
+$total-columns: 12;
+$column-gutter: rem-calc(30/2);
+
+// Gobal Variables
+$opposite-direction: right;
+$default-float: left;
+$default-padding: 0 $column-gutter;

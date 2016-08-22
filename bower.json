@@ -1,0 +1,21 @@
+{
+  "name": "Atypon Task.",
+  "version": "0.1.0",
+  "description": "Atypon Task.",
+  "author": "Ahmad Ali <hello@ahmadali.me>",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+
+  "devDependencies": {
+    "jquery-ui": "~1.11.3",
+    "jquery": "~2.1.4",
+  }
+}
