@@ -1,5 +1,3 @@
-@import "../settings";
-
 .row {
   margin: 0 auto;
   max-width: #{$row-width};
@@ -12,15 +10,15 @@
     clear: both; 
   }
 }
-.column {
+div[class*="column-"]{
   position: relative;
   padding-left: #{$column-gutter};
   padding-right: #{$column-gutter};
   float: #{$default-float};
+}
 
-  @for $i from 1 through $total-columns {
-    &-#{$i} {
-      width: ((100 / $total-columns) * $i) * 1%;
-    }
+@for $i from 1 through $total-columns {
+  .column-#{$i} {
+    width: ((100 / $total-columns) * $i) * 1%;
   }
 }
