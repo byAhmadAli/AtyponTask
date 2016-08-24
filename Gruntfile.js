@@ -81,6 +81,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 
 	grunt.registerTask('cssConsole','building css', function () {
@@ -90,5 +91,5 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('buildCSS', ['clean:css', 'cssConsole', 'sass', 'cssmin']);
 	grunt.registerTask('buildJS', ['clean:js', 'buildLibrary', 'copy:js']);
- 	grunt.registerTask('default', ['buildCSS', 'assemble', 'watch']);
+ 	grunt.registerTask('default', ['buildCSS', 'copy', 'assemble', 'watch']);
 };

@@ -9,6 +9,9 @@
   &:after {
     clear: both; 
   }
+  &.full{
+    max-width: 100%;
+  }
 }
 div[class*="column-"]{
   position: relative;
@@ -16,7 +19,16 @@ div[class*="column-"]{
   padding-right: #{$column-gutter};
   float: #{$default-float};
 }
-
+div{
+  &.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  &.no-padding{
+    padding: 0;
+  }
+}
 @for $i from 1 through $total-columns {
   .column-#{$i} {
     width: ((100 / $total-columns) * $i) * 1%;

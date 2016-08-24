@@ -1,0 +1,25 @@
+.logo{
+  font-size: rem-calc(16);
+  margin: rem-calc(10);
+  background: #ccc;
+  width: rem-calc(100);
+  height: rem-calc(30);
+  line-height: rem-calc(30);
+  text-align: center;
+}
+.header{
+  border-bottom: 1px solid;
+}
+.main-content{
+	padding-top: rem-calc(51);
+	height: 100vh;
+}
+.left-side{
+	background: #fafafa;
+	position: absolute;
+	top: 0;
+}
+.left-side .scroll{
+	padding: rem-calc(10);
+	height: 83vh;
+}

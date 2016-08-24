@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icons';
+  src:url($icon-eot);
+  src:url($icon-eotIeFix) format('embedded-opentype'),
+    url($icon-woff) format('woff'),
+    url($icon-ttf) format('truetype'),
+    url($icon-svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: 'icons';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+i.icon{
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+$icon-shoppingcart: "\e900";
+$icon-search: "\e901";
+$icon-related: "\e902";
+$icon-references: "\e903";
+$icon-profile: "\e904";
+$icon-info: "\e905";
+$icon-figures: "\e906";
+
+
+$icons: (icon-shoppingcart, $icon-shoppingcart),
+		(icon-search, $icon-search),
+		(icon-related, $icon-related),
+		(icon-references, $icon-references),
+		(icon-profile, $icon-profile),
+		(icon-info, $icon-info),
+		(icon-figures, $icon-figures);
+
+@each $icon-name, $content in $icons {
+  .#{$icon-name} {
+    &:before{
+      content: $content;
+    }
+  }
+}

@@ -22,3 +22,10 @@ body {
   padding: 0;
   position: relative; 
 }
+img{ 
+  width: 100%;
+}
+.scroll{
+  overflow: hidden;
+  overflow-y: scroll;
+}
